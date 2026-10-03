@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#" class="top-link">About</a>
+    <a href="#" class="top-link">Help</a>
+    <button class="apps" aria-label="Apps">⋮⋮⋮</button>
+    <button class="sign-in">Sign in</button>
+  </header>
+
+  <main class="main">
+    <div class="logo" aria-label="Search">Search</div>
+
+    <form id="searchForm" class="search-form">
+      <div class="search-box">
+        <span class="search-icon">⌕</span>
+        <input id="urlInput" type="text" autocomplete="off"
+               placeholder="Search or enter a URL"
+               aria-label="Search or enter a URL">
+        <button type="button" id="clearBtn" class="clear" aria-label="Clear">×</button>
+      </div>
+
+      <div class="buttons">
+        <button type="submit">Search</button>
+        <button type="button" id="luckyBtn">I'm Feeling Lucky</button>
+      </div>
+    </form>
+
+    <p id="status" class="hint">Enter a URL to open it through Ultraviolet.</p>
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+    <div class="footer-right">
+      <a href="#">Settings</a>
+      <a href="#">About</a>
+    </div>
+  </footer>
+
+  <script src="/baremux/index.js"></script>
+  <script src="/uv/uv.config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
